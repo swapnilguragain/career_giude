@@ -1,17 +1,17 @@
 .gallery {
-	behavior: url("../js/PIE.htc");
+	behavior: url("../javascript/PIE.htc");
 	position:relative;
 }
 .box {
-	behavior: url("../js/PIE.htc");
+	behavior: url("../javascript/PIE.htc");
 	position:relative;
 }
 .frame {
-	behavior: url("../js/PIE.htc");
+	behavior: url("../javascript/PIE.htc");
 	position:relative;
 }
 #subscribe-form .subscribe-field {
-	behavior: url("../js/PIE.htc");
+	behavior: url("../javascript/PIE.htc");
 	position:relative;
 }
 *+html .title {
