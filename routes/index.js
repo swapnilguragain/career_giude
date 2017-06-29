@@ -18,6 +18,12 @@ router.get('/services', function(req, res, next) {
   res.render('services', { title: '' });
 });
 
+router.get('/login', function(req, res, next) {
+  res.render('login', { title: '' });
+});
+
+
+
 router.get('/header', function(req, res, next) {
   res.render('header', { title: '' });
 });
