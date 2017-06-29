@@ -9,8 +9,8 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 
 
-mongoose.connect('mongodb://localhost/wlitProjects');
-var db = mongoose.collection;
+// mongoose.connect('mongodb://localhost/wlitProjects');
+// var db = mongoose.collection;
 
 var app = express();
 
