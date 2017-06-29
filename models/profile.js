@@ -12,6 +12,6 @@ var profileSchema = mongoose.Schema({
 
 var Profile = module.exports = mongoose.model('Profile', profileSchema);
 
-model.exports.getProfiles = function(callback, limit){
+module.exports.getProfiles = function(callback, limit){
 	Profile.find(callback).limit(limit);
 };

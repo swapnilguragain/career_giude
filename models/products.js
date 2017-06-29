@@ -3,17 +3,17 @@ var mongoose = require('mongoose');
 // productSchema
 
 var productSchema = mongoose.Schema({
-	id: number,
+	id: String,
 	name: String,
-	price: number,
+	price: String,
 	details: String,
-	quantity: number,
+	quantity: String,
 	image: String
 	
 });
 
 var Product = module.exports = mongoose.model('Product', productSchema);
 
-model.exports.getProducts = function(callback, limit){
+module.exports.getProducts = function(callback, limit){
 	Product.find(callback).limit(limit);
 };

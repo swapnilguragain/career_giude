@@ -22,11 +22,19 @@
           <nav>
             <ul class="menu">
              
-              <li><a href="index">HOME</a></li>
-              <li><a href="services">SERVICES</a></li>
+              <li><a href="/">HOME</a></li>
+              <div class="dropdown">
+                        <li><a href='#' > OUR SERVICES</A>
+                                <div class="dropdown-content">
+                                  <a href="decorate">Decorate your room</a>
+                                     <a href="catalogue">Buy items</a>
+                                      
+                                              </div>
+                                            </div></a></li>
               <li><a href="catalogue">GALLERY</a></li>
               <li><a href="contacts">SIGN UP</a></li>
               <li><a href="login">SIGN IN</a></li>
+              
             </ul>
           </nav>
         </div>
@@ -38,7 +46,7 @@
     <div class="main">
       <div class="container_12">
         <div class="grid_9">
-          <h1> <a class="logo" href="index.html">Int<strong>e</strong>rior</a> <span>Design</span> </h1>
+          <h1> <a class="logo" href="index">W<strong>e</strong> <span>Design</span></a> </h1>
         </div>
         <!-- <div class="grid_3">
           <form id="search-form" action="#" method="post" enctype="multipart/form-data">
@@ -67,7 +75,7 @@
                   <div class="wrapper">
                     <div class="grid_12">
                       <div class="indent-left">
-<form method="POST">
+<form method="POST" action="addUploads/insert">
 <div id='data'>Height:   <input type='number' name='height'>
 <br>
 <br>
@@ -88,7 +96,7 @@ Cost Limit:<input type="number" name="cost">
 <br>
 <br>
 
-Room type:<select name="room">
+Room type:<select name="type">
   <option value="kids">Kids</option>
   <option value="royale">Royale </option>
   <option value="modern">Modern</option>
@@ -98,7 +106,7 @@ Room type:<select name="room">
 <br>
 <br>
 
-<button name='upload'>Upload image</button>
+<button name='image'>Upload image</button>
 <br>
 <br>
 
@@ -112,5 +120,27 @@ Room type:<select name="room">
           </div>
          </section>
 </form>
+<footer>
+  <div class="main">
+    <div class="container_12">
+      <div class="wrapper">
+        <div class="grid_4">
+          <div>Copyright &copy; <a href="#">Interior Design</a> All Rights Reserved</div>
+          <div>Design by <a target="_blank" href="http://wlit.org.np/">Wlit.org.np</a></div>
+          <!-- {%FOOTER_LINK} -->
+        </div>
+        <div class="grid_4"> <span class="phone-numb"></span> </div>
+        <div class="grid_4">
+          <ul class="list-services">
+            <li><a href="#"></a></li>
+            <li><a class="item-2" href="#"></a></li>
+            <li><a class="item-3" href="#"></a></li>
+            <li><a class="item-4" href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

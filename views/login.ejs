@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen">
 <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen">
 <link rel="stylesheet" href="stylesheets/grid.css" type="text/css" media="screen">
+<link rel="stylesheet" href="stylesheets/style1.css" type="text/css" media="screen">
+
 <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css" media="screen">
 <script src="javascripts/jquery-1.6.2.min.js"></script>
 <!--[if lt IE 9]>
@@ -20,7 +22,7 @@
     <div class="main">
       <div class="container_12">
         <div class="grid_9">
-          <h1> <a class="logo" href="index.html">Int<strong>e</strong>rior</a> <span>Design</span> </h1>
+          <h1> <a class="logo" href="index">W<strong>e</strong> <span>Design</span></a> </h1>
         </div>
         
         <div class="clear"></div>
@@ -42,7 +44,7 @@
                     <div class="grid_12">
                       <div class="indent-left">
                         <h3 class="p2">Login Form</h3>
-                        <form id="contact-form" action="#" method="post" enctype="multipart/form-data">
+                        <form id="contact-form" action="#" method="get" enctype="multipart/form-data">
                           <fieldset>
                             <label><span class="text-form" name="email">E-mail:</span>
                               <input name="p1" type="text">
@@ -51,7 +53,7 @@
                               <input name="p2" type="text">
                             </label>
 
-                            <button class="btn btn-success" type="submit">Login</button>
+                            <button class="btn btn-success" type="#">Login</button>
                       
                             <!-- <div class="buttons"><p style="text-align:left;"> 
                              <a class="button" href="#">Login</a> </div> -->
@@ -77,4 +79,7 @@
   </div>
 </footer>
 </body>
+<script type="text/javascript">
+  $('#contact-form').validate();
+</script>
 </html>

@@ -8,12 +8,12 @@ var uploadSchema = mongoose.Schema({
 	width: String,
 	length: String,
 	type: String,
-	costLimit: number
+	costLimit: String
 	
 });
 
 var Upload = module.exports = mongoose.model('Upload', uploadSchema);
 
-model.exports.getUploads = function(callback, limit){
+module.exports.getUploads = function(callback, limit){
 	Upload.find(callback).limit(limit);
 };
