@@ -10,6 +10,10 @@ router.get('/contacts', function(req, res, next) {
   res.render('contacts', { title: '' });
 });
 
+router.get('/catalogue', function(req, res, next) {
+  res.render('catalogue', { title: '' });
+});
+
 router.get('/services', function(req, res, next) {
   res.render('services', { title: '' });
 });
