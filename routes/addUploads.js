@@ -8,6 +8,7 @@ const Uploads = require('../models/upload');
 
 router.post('/insert', upload.single('image'), function(req, res){
 	var uploads = new Uploads(req.body);
+	uploads.image = req.file.path;
 	uploads.save(function(err, doc){
 		if (err) throw err;
 		res.redirect('/');

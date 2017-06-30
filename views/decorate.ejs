@@ -75,7 +75,7 @@
                   <div class="wrapper">
                     <div class="grid_12">
                       <div class="indent-left">
-<form method="POST" action="addUploads/insert">
+<form method="POST" action="addUploads/insert" enctype="multipart/form-data">
 <div id='data'>Height:   <input type='number' name='height'>
 <br>
 <br>
@@ -106,7 +106,8 @@ Room type:<select name="type">
 <br>
 <br>
 
-<button name='image'>Upload image</button>
+Upload image
+<input type="file" name='image'>
 <br>
 <br>
 
