@@ -27,7 +27,7 @@
                         <li><a href='#' > OUR SERVICES</A>
                                 <div class="dropdown-content">
                                   <a href="decorate">Decorate your room</a>
-                                     <a href="catalogue">Buy items</a>
+                                     <a href="products">Buy items</a>
                                       
                                               </div>
                                             </div></a></li>
@@ -75,52 +75,71 @@
                   <div class="wrapper">
                     <div class="grid_12">
                       <div class="indent-left">
+                      <h3 class="p2">We Design Your Room</h3>
 <form method="POST" action="addUploads/insert" enctype="multipart/form-data">
-<div id='data'>Height:   <input type='number' name='height'>
-<br>
-<br>
-<br>
+<fieldset>
+                            <label><span class="text-form">Height:</span>
+                              <input type='number' name='height'>
+                            </label>
+                            <br>
+                            <br>
+                            <label><span class="text-form">Length:</span>
+                              <input name="p2" type="number">
+                            </label>
+                            <br>
+                            <br>
+                            <label><span class="text-form">Width:</span>
+                              <input type='number'>
+                            </label>
+                            <br>
+                            <br>
+                            <label><span class="text-form">Cost Limit:</span>
+                              <input type="number" name="cost">
+                            </label>
+                            <br>
+                            <br>
+                            <label><span class="text-form">Room Type:</span>
+                              <!-- <input type="number" name="cost"> -->
 
-Length: <input type="number" name="length">
-<br>
-<br>
-<br>
+                             <select name="type">
+                            <label><span class="text-form"><option value="kids">Kids</option></span></label>
+                             <option value="royale">Royale </option>
+                            <option value="modern">Modern</option>
+                            <option value="ancient">Classy</option>
+                              </select>
+                            </label>
+                            <br>
+                            <br>
+                            <label><span class="text-form">Upload image</span>
+                              <!-- <input type="number" name="cost"> -->
+                              <input type="file" name='image'>
+                            </label>
 
-Width:<input type="number" name="width">
-<br>
-<br>
-<br>
+                            <br>
+                            <br>
 
-Cost Limit:<input type="number" name="cost">
-<br>
-<br>
-<br>
+                            <button type='submit' name='submit'>SUBMIT</button>
+                      
+                            <!-- <div class="buttons"><p style="text-align:left;"> 
+                             <a class="button" href="#">Login</a> </div> -->
 
-Room type:<select name="type">
-  <option value="kids">Kids</option>
-  <option value="royale">Royale </option>
-  <option value="modern">Modern</option>
-  <option value="ancient">Classy</option>
-</select></select>
-<br>
-<br>
-<br>
+                             
 
-Upload image
-<input type="file" name='image'>
-<br>
-<br>
+                          </fieldset>
 
-<button type='submit' name='submit'>SUBMIT</button>
-</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-         </section>
 </form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 <footer>
   <div class="main">
     <div class="container_12">

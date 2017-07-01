@@ -14,6 +14,14 @@ router.get('/index', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/index1', function(req, res, next) {
+  res.render('index1', { title: 'Express' });
+});
+
+router.get('/products', function(req, res, next) {
+  res.render('products', { title: 'Express' });
+});
+
 router.get('/try', function(req, res, next) {
   res.render('try', { title: 'Express', Products });
 });
