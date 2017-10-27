@@ -9,7 +9,6 @@ var uploadSchema = mongoose.Schema({
 	length: String,
 	type: String,
 	costLimit: String
-	
 });
 
 var Upload = module.exports = mongoose.model('Upload', uploadSchema);

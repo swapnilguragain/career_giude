@@ -14,16 +14,12 @@ router.get('/index', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/index1', function(req, res, next) {
-  res.render('index1', { title: 'Express' });
-});
+router.get('/design', function(req, res, next){
+  res.render('design', { tittle: 'Express'});
+})
 
 router.get('/products', function(req, res, next) {
   res.render('products', { title: 'Express' });
-});
-
-router.get('/try', function(req, res, next) {
-  res.render('try', { title: 'Express', Products });
 });
 
 router.get('/buy', function(req, res, next) {
@@ -38,20 +34,13 @@ router.get('/catalogue', function(req, res, next) {
   res.render('catalogue', { title: '' });
 });
 
-router.get('/services', function(req, res, next) {
-  res.render('services', { title: '' });
-});
-
 router.get('/login', function(req, res, next) {
   res.render('login', { title: '' });
 });
 
-
-
 router.get('/header', function(req, res, next) {
   res.render('header', { title: '' });
 });
-
 
 router.get('/decorate', function(req, res, next) {
   res.render('decorate', { title: '' });
