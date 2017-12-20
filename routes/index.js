@@ -18,6 +18,10 @@ router.get('/design', function(req, res, next){
   res.render('design', { tittle: 'Express'});
 })
 
+router.get('/design1', function(req, res, next){
+  res.render('design1', { tittle: 'Express'});
+})
+
 router.get('/products', function(req, res, next) {
   res.render('products', { title: 'Express' });
 });
@@ -44,6 +48,10 @@ router.get('/header', function(req, res, next) {
 
 router.get('/decorate', function(req, res, next) {
   res.render('decorate', { title: '' });
+});
+
+router.get('/try', function(req, res, next) {
+  res.render('try', { title: '' });
 });
 
 
