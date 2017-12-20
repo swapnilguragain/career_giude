@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/index', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Interior Design' });
 });
 
 router.get('/design', function(req, res, next){
@@ -31,11 +31,7 @@ router.get('/buy', function(req, res, next) {
 });
 
 router.get('/contacts', function(req, res, next) {
-  res.render('contacts', { title: '' });
-});
-
-router.get('/catalogue', function(req, res, next) {
-  res.render('catalogue', { title: '' });
+  res.render('contacts', { title: 'Contacts' });
 });
 
 router.get('/login', function(req, res, next) {
@@ -48,6 +44,14 @@ router.get('/header', function(req, res, next) {
 
 router.get('/decorate', function(req, res, next) {
   res.render('decorate', { title: '' });
+});
+
+router.get('/services', function(req, res, next) {
+  res.render('services', { title: 'Contacts' });
+});
+
+router.get('/catalogue', function(req, res, next) {
+  res.render('catalogue', { title: 'Contacts' });
 });
 
 router.get('/try', function(req, res, next) {
