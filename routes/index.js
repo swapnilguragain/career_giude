@@ -14,6 +14,10 @@ router.get('/index', function(req, res, next) {
   res.render('index', { title: 'Interior Design' });
 });
 
+router.get('/3dmodeling', function(req, res, next){
+  res.render('3dmodeling', { tittle: '3D Model'});
+});
+
 router.get('/design', function(req, res, next){
   res.render('design', { tittle: 'Express'});
 })
