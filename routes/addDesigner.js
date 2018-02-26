@@ -15,10 +15,6 @@ router.post('/insert', function(req, res) {
 
 	// todo image
 
-
-
-
-
 	var newDesigner = new Designer;
 	newDesigner.name = name;
 	newDesigner.number = number;

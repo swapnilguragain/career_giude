@@ -55,6 +55,27 @@
   </div>
 </header>
 
+    <table class="table">
+      <thead class="thead-inverse">
+        <tr>
+          <th>Code no.</th>
+          <th>Work Experience</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <% designer.forEach(function(designer, i){ %>
+        <tr>
+          <th scope="row"><%= i+1 %></th>
+          <td><%= designer.work %></td>
+        </tr>
+      <% }) %> 
+      </tbody>
+    </table>
+
+    <a class="btn btn-success" id="indexEdit" href="/add">New Desiginer</a>
+
+
 <!-- footer -->
 <footer>
   <br><br>

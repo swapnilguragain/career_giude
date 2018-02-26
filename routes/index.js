@@ -4,6 +4,7 @@ var router = express.Router();
 const Profile = require('../models/profile');
 const Products = require('../models/products');
 const Upload = require('../models/upload');
+const Designer = require('../models/designer');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -20,7 +21,27 @@ router.get('/3dmodeling', function(req, res, next){
 
 router.get('/design', function(req, res, next){
   res.render('design', { tittle: 'Express'});
-})
+});
+
+router.get('/add', function(req, res, next){
+  res.render('addDesigner', { tittle: 'Add Designers'});
+});
+
+router.get('/designers', function(req, res, next){
+  Designer.getDesigner(function(err, designer){
+    if (err) throw err; 
+    res.render('designers', { title: 'Designers', designer });
+  });
+});
+
+router.get('/profile', function(req, res, next) {
+  Designer.getDesigner(function(err, designer){
+    if (err) throw err; 
+    res.render('designerProfile', { title: 'Profiles', designer });
+  });
+});
+
+
 
 router.get('/design1', function(req, res, next){
   res.render('design1', { tittle: 'Express'});

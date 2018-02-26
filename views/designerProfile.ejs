@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen">
 <link rel="stylesheet" href="stylesheets/style1.css" type="text/css" media="screen">
 <link rel="stylesheet" href="stylesheets/grid.css" type="text/css" media="screen">
+<link rel="stylesheet" href="stylesheets/bootstrap.min.css" type="text/css" media="screen">
 <script src="javascripts/jquery-1.6.2.min.js"></script>
 <header>
   <div class="row-1">
@@ -54,6 +55,58 @@
     </div>
   </div>
 </header>
+
+<!-- portfolio -->
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      Code no.
+    </div>
+    <div class="col-sm-9">
+      <%= designer.id %>
+    </div>
+  </div>
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      Work Experience
+    </div>
+    <div class="col-sm-9">
+    <%= designer.work %>
+    </div>
+  </div>
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      Contact
+    </div>
+    <div class="col-sm-9">
+      <div class="row content">
+        <div class="col-sm-3 sidenav">
+          email id
+        </div>
+        <div class="col-sm-9">
+        <%= designer.email %>
+        </div>
+      </div>
+      <div class="row content">
+        <div class="col-sm-3 sidenav">
+          Phone number
+        </div>
+        <div class="col-sm-9">
+        <%= designer.number %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      
+    </div>
+    <div class="col-sm-9">
+      <button>Request</button>
+    </div>
+  </div>
+</div>
 
 <!-- footer -->
 <footer>
