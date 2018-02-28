@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen">
 <link rel="stylesheet" href="stylesheets/style1.css" type="text/css" media="screen">
 <link rel="stylesheet" href="stylesheets/grid.css" type="text/css" media="screen">
+<link rel="stylesheet" href="stylesheets/bootstrap.min.css" type="text/css" media="screen">
 <script src="javascripts/jquery-1.6.2.min.js"></script>
 <!--[if lt IE 9]>
 <script src="js/html5.js"></script>
@@ -28,7 +29,7 @@
                                 <div class="dropdown-content">
                                   <a href="decorate">Decorate your room</a>
                                   <a href="products">Buy items</a>
-                                  <a href="design">Design</a>
+                                  <!-- <a href="design">Design</a> -->
                                               </div>
                                             </div></a></li>
               <li><a href="catalogue">GALLERY</a></li>
@@ -76,8 +77,8 @@
                     <div class="grid_12">
                       <div class="indent-left">
                       <h3 class="p2">We Design Your Room</h3>
-<form method="POST" action="addUploads/insert" enctype="multipart/form-data">
-<fieldset>
+                        <form method="POST" action="addUploads/insert" enctype="multipart/form-data">
+                          <fieldset>
                             <label><span class="text-form">Height:</span>
                               <input type='number' name='height'>
                             </label>
@@ -110,6 +111,11 @@
                             </label>
                             <br>
                             <br>
+                            <label><span class="text-form">Description</span>
+                              <textarea type='string' name="description"></textarea>
+                            </label>
+                            <br>
+                            <br>
                             <label><span class="text-form">Upload image</span>
                               <!-- <input type="number" name="cost"> -->
                               <input type="file" name='image'>
@@ -127,7 +133,7 @@
 
                           </fieldset>
 
-</form>
+                        </form>
 </div>
 </div>
 </div>

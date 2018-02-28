@@ -1,91 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>Interior Design</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen">
-<link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen">
-<link rel="stylesheet" href="stylesheets/style1.css" type="text/css" media="screen">
-<link rel="stylesheet" href="stylesheets/grid.css" type="text/css" media="screen">
-<link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">
-<link rel="stylesheet" href="stylesheets/bootstrap.min.css" type="text/css">
-<script src="javascripts/jquery-1.6.2.min.js"></script>
-<script src="javascripts/jquery.galleriffic.js"></script>
-<script src="javascripts/jquery.opacityrollover.js"></script>
-<script src="javascripts/fabric.min.js"></script>
-<script src="javascripts/fileSaver.min.js"></script>
-<script src="javascripts/design.js"></script>
-
-<!--[if lt IE 9]>
-<script src="js/html5.js"></script>
-<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
-<![endif]-->
+  <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="stylesheets/style1.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="stylesheets/grid.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css" media="screen">
+    <script src="javascripts/jquery-1.6.2.min.js"></script>
 </head>
+
 <body>
-<canvas id="c" width="800" height="600"></canvas>
-<input type="button" name="" id="b" value="go right">
 
-<input type="button" name="" value="save" id="save">
+  <header>
+    <div class="row-1">
+      <div class="main">
+        <div class="container_12">
+          <div class="grid_12">
+            <nav>
+              <ul class="menu">
+                <li><a href="/">HOME</a></li>
+                <div class="dropdown">
+                          <li><a href='#' > OUR SERVICES</A>
+                                  <div class="dropdown-content">
+                                    <a href="decorate">Decorate your room</a>
+                                    <a href="products">Buy items</a>
+                                    <!-- <a href="design">Design</a>     -->
+                                                </div>
+                                              </div></a></li>
+                <li><a href="catalogue">GALLERY</a></li>
+                <li><a href="contacts">SIGN UP</a></li>
+                <li><a href="login">SIGN IN</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="row-2">
+      <div class="main">
+        <div class="container_12">
+          <div class="grid_9">
+            <h1> <a class="logo" href="index">W<strong>e</strong> <span>Design</span></a> </h1>
+          </div>
+          <!-- <div class="grid_3">
+            <form id="search-form" action="#" method="post" enctype="multipart/form-data">
+              <fieldset>
+                <div class="search-field">
+                  <input name="search" type="text">
+                  <a class="search-button" href="#"><span>search</span></a> </div>
+              </fieldset>
+            </form>
+          </div> -->
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<script type="text/javascript">
-	var canvas = new fabric.Canvas('c');
-
-	canvas.backgroundColor = 'yellow';
-
-	// var myImage = '11/coffee-cup.png';
-
-	// $('#b').on('click', addImage);
-
-	// function addImage(){
-	// 	fabric.Image.fromURL(myImage, function(img){
-	// 		img.set({
-	// 			left: 10,
-	// 			top: 10,
-	// 		});
-	// 		canvas.add(img);
-	// 	});
-	// };
-
-	var	rect = new fabric.Rect({
-		left : 150,
-		top : 150,
-		fill : 'red',
-		width: 200,
-		height:200,
-		angle: 45
-	});
-	canvas.add(rect);
-
-	// rect.animate('left', '+=100',{
-	// 	onChange : canvas.renderAll.bind(canvas),
-	// 	duration : 500
-	// });
-
-	// rect.animate('angle', '+=15',{
-	// 	onChange : canvas.renderAll.bind(canvas),
-	// 	duration : 500,
-	// 	easing : fabric.util.ease.easeOutBounce
-	// });
-
-	// rect.on('scaling', function(){
-	// 	console.log('scaling');
-	// });
+  <!-- portfolio -->
 
 
-	$('#b').click(function(){
-		rect.setLeft(rect.getLeft()+10);
-		canvas.renderAll();
-		console.log('Left' + rect.getLeft());
-		console.log('Right' + rect.getTop());
-		console.log('angle' + rect.getAngle());
-	});
-	$('#save').click(function(){
-		$('#c').get(0).toBlob(function(blob){
-			saveAs(blob, 'myImage.png');
-		});
-	});
-</script>
+<section id="content">
+  <div class="bg-top">
+    <div class="bg-top-2">
+      <div class="bg">
+        <div class="bg-top-shadow">
+          <div class="main">
+            <div class="box">
+              <div class="padding">
+                <div class="container_12">
+                  <div class="wrapper">
+                    <div class="grid_12">
+                      <div class="indent-left">
+                        <h3 class="p2">List of decorate requests:</h3>
+                        <form id="roomDecorate" action="#" method="get" enctype="multipart/form-data">
+                          <fieldset>
+                           
+                             <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 sidenav">
+        Code no.
+      </div>
+      <div class="col-sm-9">
+        123
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 sidenav">
+        Work Experience
+      </div>
+      <div class="col-sm-9">
+      123
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 sidenav">
+        Contact
+      </div>
+      <div class="col-sm-9">
+        <div class="row">
+          <div class="col-sm-3 sidenav">
+            email id
+          </div>
+          <div class="col-sm-9">
+          123
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 sidenav">
+            Phone number
+          </div>
+          <div class="col-sm-9">
+          123 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 sidenav">
+        
+      </div>
+      <div class="col-sm-9">
+        <td><a class="btn btn-primary" id="designerRequest" href="#">Request</a>
+      </div>
+    </div>
+  </div>
 
+
+                          </fieldset>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+  <!-- footer -->
+  <footer>
+    <br><br>
+    <div class="main">
+      <div class="container_12">
+        <div class="wrapper">
+          <div class="grid_4">
+            <div>Copyright &copy; <a href="#">WLiT</a> All Rights Reserved</div>
+            <div>Design by <a target="_blank" href="#">WLiT</a></div>
+            <!-- {%FOOTER_LINK} -->
+          </div>
+          <div class="grid_4"> <span class="phone-numb"></div>
+          <div class="grid_4">
+            <ul class="list-services">
+              <li><a href="#"></a></li>
+              <li><a class="item-2" href="#"></a></li>
+              <li><a class="item-3" href="#"></a></li>
+              <li><a class="item-4" href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

@@ -27,21 +27,19 @@ router.get('/add', function(req, res, next){
   res.render('addDesigner', { tittle: 'Add Designers'});
 });
 
+router.get('/profile/:id', function(req, res){
+  Designer.findOne({_id: req.params.id}, function(err, designer){
+    res.render('designerProfile', {title: 'Profile', designer});
+    if (err) throw err;
+  });
+});
+
 router.get('/designers', function(req, res, next){
   Designer.getDesigner(function(err, designer){
     if (err) throw err; 
     res.render('designers', { title: 'Designers', designer });
   });
 });
-
-router.get('/profile', function(req, res, next) {
-  Designer.getDesigner(function(err, designer){
-    if (err) throw err; 
-    res.render('designerProfile', { title: 'Profiles', designer });
-  });
-});
-
-
 
 router.get('/design1', function(req, res, next){
   res.render('design1', { tittle: 'Express'});
