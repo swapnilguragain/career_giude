@@ -27,7 +27,7 @@ router.get('/add', function(req, res, next){
   res.render('addDesigner', { tittle: 'Add Designers'});
 });
 
-router.get('/profile/:id', function(req, res){
+router.get('/designerProfile/:id', function(req, res){
   Designer.findOne({_id: req.params.id}, function(err, designer){
     res.render('designerProfile', {title: 'Profile', designer});
     if (err) throw err;
@@ -41,9 +41,26 @@ router.get('/designers', function(req, res, next){
   });
 });
 
-router.get('/design1', function(req, res, next){
-  res.render('design1', { tittle: 'Express'});
-})
+router.get('/requestAdmin', function(req, res, next){
+  Upload.getUploads(function(err, upload){
+    if (err) throw err;
+    res.render('requestAdmin', {tittle: 'Admin Request Room Design', upload});
+  });
+});
+
+router.get('/requestDesigner', function(req, res, next){
+  Upload.getUploads(function(err, upload){
+    if (err) throw err;
+    res.render('requestDesigner', {tittle: 'Work Request', upload});
+  });
+});
+
+router.get('/designerRequest', function(req, res, next){
+  Upload.getUpload(function(err, upload){
+    if (err) throw err;
+    res.render('designerRequest', {tittle: 'Work Request', upload});
+  });
+});
 
 router.get('/products', function(req, res, next) {
   res.render('products', { title: 'Express' });
@@ -53,16 +70,12 @@ router.get('/buy', function(req, res, next) {
   res.render('buy', { title: 'Express' });
 });
 
-router.get('/contacts', function(req, res, next) {
-  res.render('contacts', { title: 'Contacts' });
+router.get('/signUp', function(req, res, next) {
+  res.render('signUp', { title: 'Sign Up' });
 });
 
 router.get('/login', function(req, res, next) {
   res.render('login', { title: '' });
-});
-
-router.get('/header', function(req, res, next) {
-  res.render('header', { title: '' });
 });
 
 router.get('/decorate', function(req, res, next) {
