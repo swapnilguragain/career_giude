@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen">
+<link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="stylesheets/style1.css" type="text/css" media="screen">
+<link rel="stylesheet" href="stylesheets/grid.css" type="text/css" media="screen">
+<link rel="stylesheet" href="stylesheets/bootstrap.min.css" type="text/css" media="screen">
+
+<script src="javascripts/jquery-1.6.2.min.js"></script>
+<header>
+  <div class="row-1">
+    <div class="main">
+      <div class="container_12">
+        <div class="grid_12">
+          <nav>
+            <ul class="menu">
+              <li><a href="/">HOME</a></li>
+              <div class="dropdown">
+                        <li><a href='#' > OUR SERVICES</A>
+                                <div class="dropdown-content">
+                                  <a href="decorate">Decorate your room</a>
+                                  <a href="products">Buy items</a>
+                                  <!-- <a href="design">Design</a>     -->
+                                              </div>
+                                            </div></a></li>
+              <li><a href="catalogue">GALLERY</a></li>
+              <li><a href="signUp">SIGN UP</a></li>
+              <li><a href="login">SIGN IN</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="row-2">
+    <div class="main">
+      <div class="container_12">
+        <div class="grid_9">
+          <h1> <a class="logo" href="index">W<strong>e</strong> <span>Design</span></a> </h1>
+        </div>
+        <!-- <div class="grid_3">
+          <form id="search-form" action="#" method="post" enctype="multipart/form-data">
+            <fieldset>
+              <div class="search-field">
+                <input name="search" type="text">
+                <a class="search-button" href="#"><span>search</span></a> </div>
+            </fieldset>
+          </form>
+        </div> -->
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- request data -->
+
+<section id="content">
+  <div class="bg-top">
+    <div class="bg-top-2">
+      <div class="bg">
+        <div class="bg-top-shadow">
+          <div class="main">
+            <div class="box">
+              <div class="padding">
+                <div class="container_12">
+                  <div class="wrapper">
+                    <div class="grid_12">
+                      <div class="indent-left">
+                        <h3 class="p2">List of decorate requests:</h3>
+                        <% upload.forEach(function(upload, i){ %>
+                        <form id="roomDecorate" action="#" method="get" enctype="multipart/form-data">
+                          <fieldset>
+                           
+                          <div class="row">
+                            <div class="col-sm-4">
+                              <p>Height</p>
+                              <input type="text" name="height" value="<%= upload.height %>">
+                            </div>
+                            <div class="col-sm-4">
+                              <p>Length</p>
+                              <input type="text" name="length" value="<%= upload.length %>">
+                            </div>
+                            <div class="col-sm-4">
+                              <p>Width</p>
+                              <input type="text" name="width" value="<%= upload.width %>">
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <p>Cost Limit</p>
+                              <input type="text" name="limit" value="<%= upload.limit %>">
+                            </div>
+                            <div class="col-sm-6">
+                              <p>Room Type</p>
+                              <input type="text" name="type" value="<%= upload.type %>">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4">
+                              Image
+                            </div>
+                            <div class="col-sm-4">
+                              <!-- uploaded image -->
+                            </div>
+                          </div>
+                                                      
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4">
+                              <input type="checkbox" name="checkbox" id="checckbox">
+                              <label>Accept</label>
+                            </div>
+                            <div class="col-sm-4">
+                              <a class="btn" href="#">Decline</a>
+                            </div>
+                            <div class="col-sm-4">
+                              <a class="btn" href="#">Update</a>
+                            </div>
+                          </div>
+
+                          </fieldset>
+                        </form>
+                        <% }) %>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer -->
+<footer>
+  <br><br>
+  <div class="main">
+    <div class="container_12">
+      <div class="wrapper">
+        <div class="grid_4">
+          <div>Copyright &copy; <a href="#">WLiT</a> All Rights Reserved</div>
+          <div>Design by <a target="_blank" href="#">WLiT</a></div>
+          <!-- {%FOOTER_LINK} -->
+        </div>
+        <div class="grid_4"> <span class="phone-numb"></div>
+        <div class="grid_4">
+          <ul class="list-services">
+            <li><a href="#"></a></li>
+            <li><a class="item-2" href="#"></a></li>
+            <li><a class="item-3" href="#"></a></li>
+            <li><a class="item-4" href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</head>
+</html>
