@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="stylesheets/grid.css" type="text/css" media="screen">
 <link rel="stylesheet" href="stylesheets/style1.css" type="text/css" media="screen">
 <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="stylesheets/bootstrap.min.css" type="text/css" media="screen">
 
 <script src="javascripts/jquery-1.6.2.min.js"></script>
 <!--[if lt IE 9]>
@@ -88,7 +89,7 @@ p { text-align:center; }
                     <div class="grid_12">
                       <div class="indent-left">
                         <h3 class="p2">Registration Form</h3>
-                        <form id="contact-form" action="addProfiles/insert" method="post" enctype="multipart/form-data">
+                        <form id="contact-form" action="addProfiles/insert" method="post">
                           <fieldset>
                             <label><span class="text-form">Name:</span>
                               <input name="name" type="text" id="name">
@@ -96,19 +97,20 @@ p { text-align:center; }
                             <label><span class="text-form">Email:</span>
                               <input name="email" type="text" id='email'>
                             </label>
+                            <label><span class="text-form">Password:</span>
+                              <input name="password" type="password" id='username'>
+                            </label>
+                            <label><span class="text-form">Confirm Password:</span>
+                              <input name="confirmPassword" type="password" id='confirm'>
+                            </label>
                             <label><span class="text-form">Phone:</span>
                               <input name="phone" type="text" id='phone'>
                             </label>
                             <label><span class="text-form">Address:</span>
                               <input name="address" type="text" id='address'>
                             </label>
-                            <label><span class="text-form">Password:</span>
-                              <input name="password" type="password" id='username'>
-                            </label>
-                            <label><span class="text-form">Confirm Password:</span>
-                              <input type="password" id='confirm'>
-                            </label>
-                             <button class="btn btn-info" type="submit" justify-content:centre>SUBMIT</button> </div>
+                              <button class="btn btn-success" id="regSubmit" type="submit">Submit</button>
+                            </div>
                           </fieldset>
                         </form>
                       </div>
@@ -166,5 +168,12 @@ p { text-align:center; }
     </div>
   </div>
 </footer>
+<script type="text/javascript">
+//   $(document).ready(function(){
+//     $("#regSubmit").click(function(){
+//         $(this).validate();
+//     });
+// });
+</script>
 </body>
 </html>

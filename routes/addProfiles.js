@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 const Profile = require('../models/profile');
 
 router.post('/insert', function(req, res){
-	console.log('::::yes');
+	console.log(req.body);
 
 	var name = req.body.name;
 	var	email = req.body.email;

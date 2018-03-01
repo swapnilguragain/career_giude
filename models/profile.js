@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 var profileSchema = mongoose.Schema({
 	name: {
 		type: String,
-		required: true,
+		required: true
 	},
 	email: {
 		type: String,
@@ -14,11 +14,13 @@ var profileSchema = mongoose.Schema({
 	},
 	password: {
 		type: String,
-    	required: true
+		required: true
+
 	},
 	confirmPassword: {
 		type: String,
-    	required: true
+		required: true
+
 	},
 	address: String,
 	phone: String
