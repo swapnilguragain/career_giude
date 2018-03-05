@@ -1,10 +1,13 @@
 var express = require('express');
 var router = express.Router();
+var nodemailer = require('nodemailer');
 
 const Profile = require('../models/profile');
 const Products = require('../models/products');
 const Upload = require('../models/upload');
 const Designer = require('../models/designer');
+const mailTransport = nodemailer.createTransport(`smtps://wedesignnp@gmail.com:swapwedesign@smtp.gmail.com`);
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -32,6 +35,26 @@ router.get('/designerProfile/:id', function(req, res){
     res.render('designerProfile', {title: 'Profile', designer});
     if (err) throw err;
   });
+});
+
+
+router.post('/sendEmail', function(req, res){
+  
+
+    vName = req.body.name;
+    vEmail = req.body.email;
+    
+
+    const mailOptions = {
+      from: 'We Design <noreply@wedesign.com>',
+      to: vEmail //todo change this to upper variable
+    };
+    mailOptions.subject = 'New design request';
+    mailOptions.text = 'Mr/Ms. ' + vName + ' you have received a request. Please login to our portal to know more about the request. ';
+    return mailTransport.sendMail(mailOptions, (error, info) => {
+          res.send('sucess');
+    });
+    
 });
 
 router.get('/designers', function(req, res, next){

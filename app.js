@@ -3,7 +3,6 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
@@ -18,6 +17,8 @@ var addProducts = require('./routes/addProducts');
 var addDesigner = require('./routes/addDesigner');
 
 var app = express();
+
+
 
 mongoose.connect('mongodb://localhost/wlitProjects');
 var db = mongoose.collection;
@@ -47,6 +48,7 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
+
 
 // error handler
 app.use(function(err, req, res, next) {
