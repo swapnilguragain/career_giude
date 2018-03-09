@@ -117,5 +117,12 @@ router.get('/try', function(req, res, next) {
   res.render('try', { title: '' });
 });
 
+router.get('/try/:id', function(req, res){
+  Designer.findOne({_id: req.params.id}, function(err, designer){
+    res.render('try', {title: 'Profile', designer});
+    if (err) throw err;
+  });
+});
+
 
 module.exports = router;

@@ -4,6 +4,27 @@ var mongoose = require('mongoose');
 
 const Profile = require('../models/profile');
 
+router.post('/login', function(req, res){
+	var	email = req.body.email;
+	var password = req.body.password;
+
+	Profile.findOne({email: email, password: password}, function(err, profile){
+		if (err) {
+			console.log(err);
+			res.redirect('/');
+
+			return res.status(500).send();
+		}
+
+		if (!profile) {
+			res.redirect('/');
+			
+			return res.status(404).send();
+		}
+		res.redirect('/');
+	});
+});
+
 router.post('/insert', function(req, res){
 	console.log(req.body);
 
