@@ -12,14 +12,9 @@ router.post('/login', function(req, res){
 		if (err) {
 			console.log(err);
 			res.redirect('/');
-
-			return res.status(500).send();
 		}
-
 		if (!profile) {
-			res.redirect('/');
-			
-			return res.status(404).send();
+			res.redirect('/');	
 		}
 		res.redirect('/');
 	});

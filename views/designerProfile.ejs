@@ -131,6 +131,8 @@
   
 
   function mailsender() {
+    document.getElementById('designerRequest').innerHTML = 'Request send';
+
     alert('<%= designer.email %>');
     $.post('/sendEmail',
     {
