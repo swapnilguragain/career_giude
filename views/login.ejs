@@ -79,16 +79,16 @@ p { text-align:center; }
                     <div class="grid_12">
                       <div class="indent-left">
                         <h3 class="p2">Login Form</h3>
-                        <form id="contact-form" action="#" method="get" enctype="multipart/form-data">
+                        <form id="contact-form" action="addProfiles/login" method="get">
                           <fieldset>
                             <label><span class="text-form" name="email">E-mail:</span>
                               <input name="p1" type="text">
                             </label>
                             <label><span class="text-form" name="password">Password:</span>
-                              <input name="p2" type="text">
+                              <input name="p2" type="password">
                             </label>
 
-                            <button class="btn btn-success" type="#">Login</button>
+                            <button class="btn btn-success" type="submit">Login</button>
                       
                             <!-- <div class="buttons"><p style="text-align:left;"> 
                              <a class="button" href="#">Login</a> </div> -->
@@ -134,7 +134,5 @@ p { text-align:center; }
   </div>
 </footer>
 </body>
-<script type="text/javascript">
-  $('#contact-form').validate();
-</script>
+
 </html>
