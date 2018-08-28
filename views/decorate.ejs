@@ -1,105 +1,213 @@
-<html>
+<!DOCTYPE html>
+<html lang="zxx">
 <head>
-<title>Decorate Your room</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen">
-<link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen">
-<link rel="stylesheet" href="stylesheets/style1.css" type="text/css" media="screen">
-<link rel="stylesheet" href="stylesheets/grid.css" type="text/css" media="screen">
-<link rel="stylesheet" href="stylesheets/bootstrap.min.css" type="text/css" media="screen">
-<script src="javascripts/jquery-1.6.2.min.js"></script>
-<!--[if lt IE 9]>
-<script src="js/html5.js"></script>
-<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
-<![endif]-->
-</head>
-<body id="page2">
-<!--==============================header=================================-->
-<header>
-  <div class="row-1">
-    <div class="main">
-      <div class="container_12">
-        <div class="grid_12">
-          <nav>
-            <ul class="menu">
-             
-              <li><a href="/">HOME</a></li>
-              <div class="dropdown">
-                        <li><a href='#' > OUR SERVICES</A>
-                                <div class="dropdown-content">
-                                  <a href="decorate">Decorate your room</a>
-                                  <a href="products">Buy items</a>
-                                  <!-- <a href="design">Design</a> -->
-                                              </div>
-                                            </div></a></li>
-              <li><a href="catalogue">GALLERY</a></li>
-              <li><a href="signUp">SIGN UP</a></li>
-              <li><a href="login">SIGN IN</a></li>
-              
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <div class="row-2">
-    <div class="main">
-      <div class="container_12">
-        <div class="grid_9">
-          <h1> <a class="logo" href="index">W<strong>e</strong> <span>Design</span></a> </h1>
-        </div>
-        <!-- <div class="grid_3">
-          <form id="search-form" action="#" method="post" enctype="multipart/form-data">
-            <fieldset>
-              <div class="search-field">
-                <input name="search" type="text">
-                <a class="search-button" href="#"><span>search</span></a> </div>
-            </fieldset>
-          </form>
-        </div> -->
-        <div class="clear"></div>
-      </div>
-    </div>
-  </div>
-</header>
+  <title>We Help to Design</title>
+  <!--/metadata -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+  <meta name="keywords" content="Interior Show Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+  <script>
+    addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+    }, false);
 
-<section id="content">
-  <div class="bg-top">
-    <div class="bg-top-2">
-      <div class="bg">
-        <div class="bg-top-shadow">
-          <div class="main">
-            <div class="box">
-              <div class="padding">
-                <div class="container_12">
-                  <div class="wrapper">
-                    <div class="grid_12">
-                      <div class="indent-left">
-                      <h3 class="p2">We Design Your Room</h3>
-                        <form method="POST" action="addUploads/insert" enctype="multipart/form-data">
-                          <fieldset>
-                            <label><span class="text-form">Height:</span>
-                              <input type='number' name='height'>
-                            </label>
-                            <br>
-                            <br>
-                            <label><span class="text-form">Length:</span>
-                              <input name="p2" type="number">
-                            </label>
-                            <br>
-                            <br>
-                            <label><span class="text-form">Width:</span>
-                              <input type='number'>
-                            </label>
-                            <br>
-                            <br>
-                            <label><span class="text-form">Cost Limit:</span>
-                              <input type="number" name="cost">
-                            </label>
-                            <br>
-                            <br>
-                            <label><span class="text-form">Room Type:</span>
+    function hideURLbar() {
+      window.scrollTo(0, 1);
+    }
+  </script>
+  <!-- //for-mobile-apps -->
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+  <!-- header and footer stylesheet -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <!-- //header and footer stylesheet -->
+  <!-- lightbox css file -->
+  <link href="css/lightcase.css" rel="stylesheet" type="text/css" />
+  <!-- css file -->
+
+  <!-- Testimonials-slider-css-files -->
+  <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all">
+  <link href="css/owl.theme.css" rel="stylesheet">
+<!-- //Testimonials-slider-css-files -->
+  <!-- online fonts -->
+  <link href="//fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <!-- //online fonts -->
+</head>
+
+<body>
+  <!-- banner -->
+  <div class="banner jarallax">
+      <div class="w3layouts-header-top">
+        <div class="container">
+          <div class="w3-header-top-grids">
+            <div class="w3-header-top-left">
+              <p><i class="fa fa-volume-control-phone" aria-hidden="true"></i> +1 234 567 8901</p>
+            </div>
+            <div class="w3-header-top-right">
+              <div class="agileinfo-social-grids">
+                <ul>
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                  
+                </ul>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+        </div>
+      </div>
+      <div class="head">
+        <div class="container">
+          <div class="navbar-top">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                 <div class="navbar-brand logo ">
+                  <h1><a href="index.html">We Design</a></h1>
+                </div>
+
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav link-effect-4">
+              <li class="active first-list"><a href="index">Home</a> </li>
+                
+                  
+                  <li><a href="decorate">Decorate your room</a></li>
+                
+                <li><a href="designers">Designers</a></li>
+                <li><a href="buy">Product</a></li>
+                </ul>
+              </div>
+            
+            </div>
+        </div>
+      </div>
+      <div class="w3layouts-banner-slider">
+        <div class="container">
+          <div class="slider">
+            <div class="callbacks_container">
+              <ul class="rslides callbacks callbacks1" id="slider4">
+                <li>
+                  <div class="agileits-banner-info">
+                    <h3>Discover your Dream home</h3>
+                    <p>We Help to Design according to your choice</p>
+                    <div class="w3-button">
+                      <div class="w3ls-button">
+                        <a href="#"  data-toggle="modal" data-target="#myModal">More</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="agileits-banner-info">
+                    <h3>Creative Interior Designs</h3>
+                    <p>We have a bunch of talented interior designer teams...............</p>
+                    <div class="w3-button">
+                      <div class="w3ls-button">
+                        <a href="#"  data-toggle="modal" data-target="#myModal">More</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="agileits-banner-info">
+                    <h3>Customer attractive designs</h3>
+                    <p>We have so many samples and we have received so many awesome feedback from our customers</p>
+                    <div class="w3-button">
+                      <div class="w3ls-button">
+                        <a href="#"  data-toggle="modal" data-target="#myModal">More</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="agileits-banner-info">
+                    <h3>International Experts Designers </h3>
+                    <p>We help to make your world more better and we help by providing the  best interior designs.</p>
+                    <div class="w3-button">
+                      <div class="w3ls-button">
+                        <a href="#"  data-toggle="modal" data-target="#myModal">More</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="clearfix"> </div>
+            <script>
+              // You can also use "$(window).load(function() {"
+              $(function () {
+                // Slideshow 4
+                $("#slider4").responsiveSlides({
+                auto: true,
+                pager:true,
+                nav:false,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                  $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                  $('.events').append("<li>after event fired.</li>");
+                }
+                });
+            
+              });
+             </script>
+            <!--banner Slider starts Here-->
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- //banner -->
+
+
+<!-- /testimonals section -->
+<div class="agile_about contact" id="contact">
+
+    <div class="wls_head_all">
+      <h3>We Design Your Room</h3>
+
+                    
+  <div class="container"> 
+      <div class="agileits_agile_about_mail">
+<form method="POST" action="designer" enctype="multipart/form-data">
+
+          <div class="col-md-6 agileits_agile_about_mail_left">
+            <input type="text" name="height" placeholder="Room Height" required="">
+          <div class="clearfix"> </div>
+          </div>
+
+          <div class="col-md-6 agileits_agile_about_mail_left">
+            <input type="text" name="p2" placeholder="Room Length" required="">
+          <div class="clearfix"> </div>
+          </div>
+
+
+          <div class="col-md-6 agileits_agile_about_mail_left">
+            <input type="text" name="height" placeholder="Room Width" required="">
+          <div class="clearfix"> </div>
+          </div>
+
+
+          <div class="col-md-6 agileits_agile_about_mail_left">
+            <input type="text" name="cost" placeholder="Cost Limit" required="">
+          <div class="clearfix"> </div>
+          </div>
+
+
+         <label><span class="text-form">Room Type:</span>
                               <!-- <input type="number" name="cost"> -->
 
                              <select name="type">
@@ -109,65 +217,249 @@
                             <option value="ancient">Classy</option>
                               </select>
                             </label>
-                            <br>
-                            <br>
-                            <label><span class="text-form">Description</span>
-                              <textarea type='string' name="description"></textarea>
-                            </label>
-                            <br>
-                            <br>
-                            <label><span class="text-form">Upload image</span>
-                              <!-- <input type="number" name="cost"> -->
-                              <input type="file" name='image'>
-                            </label>
 
-                            <br>
-                            <br>
 
-                            <button type='submit' name='submit' onclick="alert('We have recieved your request.We will contact you soon.')";>SUBMIT</button>
-                      
-                            <!-- <div class="buttons"><p style="text-align:left;"> 
-                             <a class="button" href="#">Login</a> </div> -->
 
-                             
 
-                          </fieldset>
+          <div class="col-md-6 agileits_agile_about_mail_left">
+            <input type="email" name="Email" placeholder="Email" required="">
+          <div class="clearfix"> </div>
+          </div>
 
-                        </form>
+
+
+
+
+          <div class="clearfix"> </div>
+          <textarea name="Message" placeholder="Description..." required=""></textarea>
+
+
+
+          <div class="col-md-6 agileits_agile_about_mail_left">
+          <input type="file" name='image'>
+          <div class="clearfix"> </div>
+          </div>
+          </br>
+          </br>
+ 
+<div class="submit">
+       
+          
+<button type='submit' value="Submit " name='submit' onclick="alert('We have recieved your request.We will contact you soon.')"; >SUBMIT</button>
+
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<footer>
-  <br><br>
-  <div class="main">
-    <div class="container_12">
-      <div class="wrapper">
-        <div class="grid_4">
-          <div>Copyright &copy; <a href="#">WLiT</a> All Rights Reserved</div>
-          <div>Design by <a target="_blank" href="#">WLiT</a></div>
-          <!-- {%FOOTER_LINK} -->
-        </div>
-        <div class="grid_4"> <span class="phone-numb"></div>
-        <div class="grid_4">
-          <ul class="list-services">
-            <li><a href="#"></a></li>
-            <li><a class="item-2" href="#"></a></li>
-            <li><a class="item-3" href="#"></a></li>
-            <li><a class="item-4" href="#"></a></li>
-          </ul>
-        </div>
+        </form>
       </div>
     </div>
   </div>
-</footer>
+</div>
+
+<!-- footer -->
+  <footer>
+    <div class="agileits-w3layouts-footer">
+      <div class="container">
+        <div class="col-md-4 w3-agile-grid">
+          <h5>About Us</h5>
+          <p>We Design is a platform for the connection between the user and the interior designer. In this website,you can send the interior design the information of the room such as length,breadth and height of room,Room type ,Cost limit and so on.These information will help the interior designer to think the blueprint of the design.And the next features is You can even choose your own interior designer as your requirement.So to choose the designer,you have to send request to the designer and designer have to accept your request then only after you will get connected with the designer.The next things you can do in our website is you can buy the furniture from our website..</p>
+          <div class="footer-agileinfo-social">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-rss"></i></a></li>
+              
+            </ul>
+          </div>
+        </div>
+       <div class="col-md-4 w3-agile-grid">
+          <h5>Discount/Sale Happening</h5>
+          <div class="w3ls-post-grids">
+            <div class="w3ls-post-grid">
+              <div class="w3ls-post-img">
+                <a href="#"><img src="images/f1.jpg" alt="" /></a>
+              </div>
+              <div class="w3ls-post-info">
+                <h6><a href="#" data-toggle="modal" data-target="#myModal">20% sale on Interior Materials</a></h6>
+                <p>Sept 24,2017</p>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+            <div class="w3ls-post-grid">
+              <div class="w3ls-post-img">
+                <a href="#"><img src="images/f2.jpg" alt="" /></a>
+              </div>
+              <div class="w3ls-post-info">
+                <h6><a href="#" data-toggle="modal" data-target="#myModal">Sale Going On</a></h6>
+                <p>Oct 25,2017</p>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+            <div class="w3ls-post-grid">
+              <div class="w3ls-post-img">
+                <a href="#"><img src="images/f3.jpg" alt="" /></a>
+              </div>
+              <div class="w3ls-post-info">
+                <h6><a href="#" data-toggle="modal" data-target="#myModal">Panel Discussion </a></h6>
+                <p>Nov 06,2017</p>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 w3-agile-grid">
+          <h5>Address</h5>
+          <div class="w3-address">
+            <div class="w3-address-grid">
+              <div class="w3-address-left">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </div>
+              <div class="w3-address-right">
+                <h6>Phone Number</h6>
+                <p>+977 7899999</p>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+            <div class="w3-address-grid">
+              <div class="w3-address-left">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </div>
+              <div class="w3-address-right">
+                <h6>Email Address</h6>
+                <p>Email :<a href="mailto:example@email.com">wlit.wedesign@gmail.com</a></p>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+            <div class="w3-address-grid">
+              <div class="w3-address-left">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </div>
+              <div class="w3-address-right">
+                <h6>Location</h6>
+                <p>Kupondol 
+                <span>Telephone : 07-55555555</span>
+                </p>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <p>© 2018 Interior Show. All rights reserved | Design by <a href="http://wlit.org.np/">WLiT</a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- //footer -->
+<!-- bootstrap-modal-pop-up -->
+  <div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          Interior Show
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>            
+        </div>
+          <div class="modal-body">
+            <img src="images/modal1.jpg" alt=" " class="img-responsive" />
+            <p>Sale Happening on Furniture product till Saturday.So hurry to get first.</i></p>
+          </div>
+      </div>
+    </div>
+  </div>
+<!-- //bootstrap-modal-pop-up --> 
+
+  <!-- js -->
+  <script src="js/jquery-2.2.3.min.js"></script>
+  <!-- //js-->
+
+  <!-- banner-responsive-slider -->
+  <script src="js/responsiveslides.min.js"></script>
+  <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: true,
+        pager: true,
+        nav: false,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+  </script>
+  <!-- //banner-responsive-slider -->
+  
+  <!-- light-case -->
+  <script src="js/lightcase.js"></script>
+  <script>
+    $('.showcase').lightcase();
+  </script>
+  <!-- //light-case -->
+
+  <!-- for testimonials slider-js-file-->
+      <script src="js/owl.carousel.js"></script>
+  <!-- //for testimonials slider-js-file-->
+    <script>
+    $(document).ready(function() { 
+    $("#owl-demo").owlCarousel({
+ 
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      autoPlay:true,
+      items : 3,
+      itemsDesktop : [640,5],
+      itemsDesktopSmall : [414,4]
+    });
+    }); 
+</script>
+<!-- for testimonials slider-js-script-->
+
+  <!-- smooth-scrolling -->
+  <script src="js/move-top.js"></script>
+  <script src="js/easing.js"></script>
+  <script>
+    jQuery(document).ready(function ($) {
+      $(".scroll").click(function (event) {
+        event.preventDefault();
+
+        $('html,body').animate({
+          scrollTop: $(this.hash).offset().top
+        }, 1000);
+      });
+    });
+  </script>
+  <script src="js/SmoothScroll.min.js"></script>
+  <!-- //smooth-scrolling -->
+  <script>
+    $(document).ready(function () {
+      /*
+      var defaults = {
+        containerID: 'toTop', // fading element id
+        containerHoverID: 'toTopHover', // fading element hover id
+        scrollSpeed: 1200,
+        easingType: 'linear' 
+      };
+      */
+
+      $().UItoTop({
+        easingType: 'easeOutQuart'
+      });
+
+    });
+  </script>
+  <!-- smooth-scrolling-of-move-up -->
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/bootstrap.js"></script>
 </body>
+
 </html>

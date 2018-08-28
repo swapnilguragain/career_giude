@@ -14,6 +14,8 @@ router.get('/', function(req, res, next) {
 		res.render('index', { title: 'Express' });
 });
 
+
+
 router.get('/index', function(req, res, next) {
   res.render('index', { title: 'Interior Design' });
 });
@@ -26,6 +28,26 @@ router.get('/design', function(req, res, next){
   res.render('design', { tittle: 'Express'});
 });
 
+router.get('/cart', function(req, res, next){
+  res.render('cart', { tittle: 'Express'});
+});
+
+router.get('/product', function(req, res, next){
+  res.render('product', { tittle: 'Express'});
+});
+
+router.get('/checkout', function(req, res, next){
+  res.render('checkout', { tittle: 'Express'});
+});
+
+router.get('/product-details', function(req, res, next){
+  res.render('product-details', { tittle: 'Express'});
+});
+
+
+router.get('/shop', function(req, res, next){
+  res.render('shop', { tittle: 'Express'});
+});
 router.get('/add', function(req, res, next){
   res.render('addDesigner', { tittle: 'Add Designers'});
 });

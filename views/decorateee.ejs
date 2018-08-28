@@ -1,0 +1,281 @@
+<html>
+<head>
+<title>Decorate Your room</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen">
+<link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="stylesheets/style1.css" type="text/css" media="screen">
+<link rel="stylesheet" href="stylesheets/grid.css" type="text/css" media="screen">
+<link rel="stylesheet" href="stylesheets/bootstrap.min.css" type="text/css" media="screen">
+<script src="javascripts/jquery-1.6.2.min.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+<![endif]-->
+
+  <script>
+    addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+      window.scrollTo(0, 1);
+    }
+  </script>
+  <!-- //for-mobile-apps -->
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+  <!-- header and footer stylesheet -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <!-- //header and footer stylesheet -->
+  <!-- lightbox css file -->
+  <link href="css/lightcase.css" rel="stylesheet" type="text/css" />
+  <!-- css file -->
+
+  <!-- Testimonials-slider-css-files -->
+  <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all">
+  <link href="css/owl.theme.css" rel="stylesheet">
+<!-- //Testimonials-slider-css-files -->
+  <!-- online fonts -->
+  <link href="//fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <!-- //online fonts -->
+</head>
+<body>
+<!--==============================header=================================-->
+<div class="banner jarallax">
+      <div class="w3layouts-header-top">
+        <div class="container">
+          <div class="w3-header-top-grids">
+            <div class="w3-header-top-left">
+              <p><i class="fa fa-volume-control-phone" aria-hidden="true"></i> +1 234 567 8901</p>
+            </div>
+            <div class="w3-header-top-right">
+              <div class="agileinfo-social-grids">
+                <ul>
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                  <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                </ul>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+        </div>
+      </div>
+      <div class="head">
+        <div class="container">
+          <div class="navbar-top">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                 <div class="navbar-brand logo ">
+                  <h1><a href="index.html">We Design</a></h1>
+                </div>
+
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav link-effect-4">
+              <li class="active first-list"><a href="index.html">Home</a> </li>
+                <li><a href="#about" class="scroll">About </a> </li>
+                  <li><a href="#services" class="scroll">Services </a> </li>
+                  <li><a href="decorate">Decorate your room</a></li>
+                <li><a href="#gallery" class="scroll">Gallery</a></li>
+                <li><a href="#team" class="scroll">Team</a></li>
+                <li><a href="#contact"  class="scroll">Contact</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+<section id="content">
+  <div class="bg-top">
+    <div class="bg-top-2">
+      <div class="bg">
+        <div class="bg-top-shadow">
+          <div class="main">
+            <div class="box">
+              <div class="padding">
+                <div class="container_12">
+                  <div class="wrapper">
+                    <div class="grid_12">
+                      <div class="indent-left">
+                      <h3 class="p2">We Design Your Room</h3>
+                        <form method="POST" action="addUploads/insert" enctype="multipart/form-data">
+                          <fieldset>
+                            <label><span class="text-form">Height:</span>
+                              <input type='number' name='height'>
+                            </label>
+                            <br>
+                            <br>
+                            <label><span class="text-form">Length:</span>
+                              <input name="p2" type="number">
+                            </label>
+                            <br>
+                            <br>
+                            <label><span class="text-form">Width:</span>
+                              <input type='number'>
+                            </label>
+                            <br>
+                            <br>
+                            <label><span class="text-form">Cost Limit:</span>
+                              <input type="number" name="cost">
+                            </label>
+                            <br>
+                            <br>
+                            <label><span class="text-form">Room Type:</span>
+                              <!-- <input type="number" name="cost"> -->
+
+                             <select name="type">
+                            <label><span class="text-form"><option value="kids">Kids</option></span></label>
+                             <option value="royale">Royale </option>
+                            <option value="modern">Modern</option>
+                            <option value="ancient">Classy</option>
+                              </select>
+                            </label>
+                            <br>
+                            <br>
+                            <label><span class="text-form">Description</span>
+                              <textarea type='string' name="description"></textarea>
+                            </label>
+                            <br>
+                            <br>
+                            <label><span class="text-form">Upload image</span>
+                              <!-- <input type="number" name="cost"> -->
+                              <input type="file" name='image'>
+                            </label>
+
+                            <br>
+                            <br>
+
+                            <button type='submit' name='submit' onclick="alert('We have recieved your request.We will contact you soon.')";>SUBMIT</button>
+                      
+                            <!-- <div class="buttons"><p style="text-align:left;"> 
+                             <a class="button" href="#">Login</a> </div> -->
+
+                             
+
+                          </fieldset>
+
+                        </form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer>
+    <div class="agileits-w3layouts-footer">
+      <div class="container">
+        <div class="col-md-4 w3-agile-grid">
+          <h5>About Us</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum urna non nisi ornare, condimentum iaculis ipsum blandit. Duis auctor vulputate metus nec luctus.</p>
+          <div class="footer-agileinfo-social">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-rss"></i></a></li>
+              <li><a href="#"><i class="fa fa-vk"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 w3-agile-grid">
+          <h5>Recent Posts</h5>
+          <div class="w3ls-post-grids">
+            <div class="w3ls-post-grid">
+              <div class="w3ls-post-img">
+                <a href="#"><img src="images/f1.jpg" alt="" /></a>
+              </div>
+              <div class="w3ls-post-info">
+                <h6><a href="#" data-toggle="modal" data-target="#myModal">Donec vel sapien in erat</a></h6>
+                <p>Sept 24,2017</p>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+            <div class="w3ls-post-grid">
+              <div class="w3ls-post-img">
+                <a href="#"><img src="images/f2.jpg" alt="" /></a>
+              </div>
+              <div class="w3ls-post-info">
+                <h6><a href="#" data-toggle="modal" data-target="#myModal">Donec vel sapien in erat</a></h6>
+                <p>Oct 25,2017</p>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+            <div class="w3ls-post-grid">
+              <div class="w3ls-post-img">
+                <a href="#"><img src="images/f3.jpg" alt="" /></a>
+              </div>
+              <div class="w3ls-post-info">
+                <h6><a href="#" data-toggle="modal" data-target="#myModal">Donec vel sapien in erat</a></h6>
+                <p>Nov 06,2017</p>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 w3-agile-grid">
+          <h5>Address</h5>
+          <div class="w3-address">
+            <div class="w3-address-grid">
+              <div class="w3-address-left">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </div>
+              <div class="w3-address-right">
+                <h6>Phone Number</h6>
+                <p>+1 234 567 8901</p>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+            <div class="w3-address-grid">
+              <div class="w3-address-left">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </div>
+              <div class="w3-address-right">
+                <h6>Email Address</h6>
+                <p>Email :<a href="mailto:example@email.com"> mail@example.com</a></p>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+            <div class="w3-address-grid">
+              <div class="w3-address-left">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </div>
+              <div class="w3-address-right">
+                <h6>Location</h6>
+                <p>Broome St, NY 10002, Canada. 
+                <span>Telephone : +00 111 222 3333</span>
+                </p>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <p>© 2018 Interior Show. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
